@@ -1,0 +1,35 @@
+//
+   Created by zhang on 15/6/14.
+
+section.content-header
+   h1
+      | 404 Error Page
+   ol.breadcrumb
+      li
+         a(href='#')
+            i.fa.fa-dashboard
+            | Home
+      li
+         a(href='#') Examples
+      li.active 404 error
+section.content
+   .error-page
+      h2.headline.text-yellow  404
+      .error-content
+         h3
+            i.fa.fa-warning.text-yellow
+            | Oops! Page not found.
+         p
+            | We could not find the page you were looking for.
+            | Meanwhile, you may
+            a(href='../../index.html') return to dashboard
+            | or try using the search form.
+         form.search-form
+            .input-group
+               input.form-control(type='text', name='search', placeholder='Search')
+               .input-group-btn
+                  button.btn.btn-warning.btn-flat(type='submit', name='submit')
+                     i.fa.fa-search
+            // /.input-group
+      // /.error-content
+   // /.error-page

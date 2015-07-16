@@ -1,0 +1,40 @@
+//
+   Created by zhang on 15/6/14.
+if(module == "initBox")
+   .modal-dialog
+      .modal-content
+         .modal-header
+            //button.close(type='button', data-dismiss='modal', aria-label='Close')
+               span(aria-hidden='true') ×
+            h4.modal-title 请输入终端信息(桌号、台号)，[
+               = name
+               | ]等待激活中......
+         .modal-body
+            form
+               .form-group
+                  label 终端信息(桌号、台号)
+                  input#clientInfo(placeholder='桌号、台号')
+         .modal-footer
+            //button.btn.btn-default.pull-left(type='button', data-dismiss='modal')
+            button#updateClientInfo.btn.btn-primary(type='button') 更新
+      // /.modal-content
+if(module == "waitingRegister")
+   .modal-dialog
+      .modal-content
+         .modal-header
+            //button.close(type='button', data-dismiss='modal', aria-label='Close')
+               span(aria-hidden='true') ×
+            h4.modal-title 已确认终端信息,[
+               = name
+               | ]等待激活中......
+if(module == "registeredInfoBox")
+   .modal-dialog
+      .modal-content
+         .modal-header
+            //button.close(type='button', data-dismiss='modal', aria-label='Close')
+               span(aria-hidden='true') ×
+            h4.modal-title 已确认终端信息,[
+               = name
+               | ]该终端已激活
+         //.modal-footer
+            button.btn.btn-default.pull-left(type='button', data-dismiss='modal') 立刻使用

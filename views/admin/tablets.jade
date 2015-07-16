@@ -1,0 +1,41 @@
+//
+   Created by zhang on 15/6/14.
+
+section.content-header
+   h1
+      | 点菜终端
+      small 管理
+   ol.breadcrumb
+      li
+         a(href='#')
+            i.fa.fa-dashboard
+            | 主页
+      li.active 点菜终端管理
+section.content
+   // /.row
+   .row
+      .col-xs-12
+         .box
+            //.box-header
+               h3.box-title Responsive Hover Table
+               //.box-tools
+                  .input-group
+                     input.form-control.input-sm.pull-right(type='text', name='table_search', style='width: 150px;', placeholder='Search')
+                     .input-group-btn
+                        button.btn.btn-sm.btn-default
+                           i.fa.fa-search
+            // /.box-header
+            .box-body.table-responsive.no-padding
+               table.table.table-hover
+                  tbody
+                     tr
+                        th ID
+                        th 客户端 名称
+                        th 桌台信息
+                        th 状态
+                        th 操作
+                     each tablet in tablets
+                        tr(id=tablet.serialId)
+                           include module/clientListLine
+            // /.box-body
+         // /.box

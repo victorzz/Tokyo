@@ -1,0 +1,348 @@
+doctype html
+html.ext-strict(xmlns='http://www.w3.org/1999/xhtml')
+    // <![endif]
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Shrimpy - Homepage
+        meta(name='format-detection', content='telephone=no')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        // Styles
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/font-awesome.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/prettyPhoto.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../bower_components/bootstrap/dist/css/bootstrap.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/owl.carousel.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/owl.theme.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/animate.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='../menu/shrimpy/libs/style.css', media='screen')
+    body.ext-webkit.ext-chrome
+        header#header
+            #logo.text-center.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='1000', style='margin-left: -88.5px;')
+                a
+                    img(src='../menu/shrimpy/libs/logo.png', alt='Logo')
+            // end logo
+            #slideshow
+                ul.rslides.rslides1
+                    li#rslides1_s0.rslides1_on(style='display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_1.jpg);')
+                        img(src='../menu/shrimpy/libs/slide_img_1.jpg', alt='')
+                        .slideshow-caption
+                            h1
+                                span.highlight 美　味　中　華
+                            h3(style='color: black;') Prepared by world famous cooks
+                        // end .slideshow-caption
+                    // end .slideshow item
+                    li#rslides1_s1(style='float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_2.jpg);')
+                        img(src='../menu/shrimpy/libs/slide_img_2.jpg', alt='')
+                        .slideshow-caption
+                            h1 美味中华
+                            h3(style='color: black;') Prepared by world famous cooker
+                            .button
+                                a(href='#') Make a reservation
+                        // end .slideshow-caption
+                    // end .slideshow item
+                    li#rslides1_s2(style='float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_3.jpg);')
+                        img(src='../menu/shrimpy/libs/slide_img_3.jpg', alt='')
+                        .slideshow-caption
+                            h1
+                                | Best
+                                span.highlight salad
+                                | in town
+                            h3 Prepared by world famous cooks
+                            .button
+                                a(href='#') Make a reservation
+                        // end .slideshow-caption
+                    // end .slideshow item
+                ul.rslides_tabs.rslides1_tabs
+                    li.rslides1_s1.rslides_here
+                        a.rslides1_s1(href='#') 1
+                    li.rslides1_s2
+                        a.rslides1_s2(href='#') 2
+                    li.rslides1_s3
+                        a.rslides1_s3(href='#') 3
+            // end slideshow
+        #navigation-sticky-wrapper(style='height: 60px;position:fixed;width: 100%;z-index: 999;bottom:0px;opacity: 0.88;')
+            nav#navigation
+                .nav-container
+                    ul
+                        li
+                            a.active(href='#logo') Home
+                        li
+                            a(href='#big-menu') メニュー
+                        li
+                            a(href='#my-order' data-toggle='modal', data-target='#myOrder') 注文
+                        li
+                            a(href='#pay' data-toggle='modal', data-target='#payOrder')  会計
+                        li
+                            a(href='#waiter')  ウェイター
+        section#big-menu.big-menu.section
+            img#food-logo(src='../menu/shrimpy/libs/food_logo.png', alt='')
+            .container
+                .row
+                    .special-tab.sticky-wrapper.is-sticky
+                        ul#menu-bar.special-tabs-titles(style="z-index: 999;background-color: white;opacity:0.9;width:970px")
+                            .col-sm-1
+                            //- for(var item in menuData.foods)
+                            li.col-sm-1.foodclass(foodkind='f1')
+                                a
+                                    .food-icon-6
+                                a
+                                    = menuData.foods.f1.name
+                            li.col-sm-1.foodclass(foodkind='f2')
+                                a
+                                    .food-icon-8
+                                a
+                                    = menuData.foods.f2.name
+                            li.col-sm-1.foodclass(foodkind='f3')
+                              a
+                                  .food-icon-2
+                              a
+                                  = menuData.foods.f3.name
+                            li.col-sm-1.foodclass(foodkind='f4')
+                              a
+                                  .food-icon-7
+                              a
+                                  = menuData.foods.f4.name
+                            li.col-sm-1.foodclass(foodkind='f5')
+                              a
+                                  .food-icon-5
+                              a
+                                  = menuData.foods.f5.name
+                            li.col-sm-1.foodclass(foodkind='f6')
+                              a
+                                  .food-icon-6
+                              a
+                                  = menuData.foods.f6.name
+                            li.col-sm-1.foodclass(foodkind='f7')
+                              a
+                                  .food-icon-7
+                              a
+                                  = menuData.foods.f7.name
+                            li.col-sm-1.foodclass(foodkind='f8')
+                              a
+                                    .food-icon-2
+                              a 其他
+                            .col-sm-1
+                        - each kindfoods in menuData.foods
+                            .special-tab-content(style='display: none;' id=kindfoods.path)
+                                .row
+                                    - each fooditem in kindfoods.fooditems
+                                        .col-md-4.col-sm-6.col-xs-6
+                                            .food-menu-item.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='100')
+                                                .pull-left.food-menu-item-img-outer.foodtouchimg(foodname= fooditem.jpname, fooddescrip= fooditem.description,foodprice= fooditem.price,foodimage= '../dlcf/'+kindfoods.path+'/'+fooditem.image)
+                                                    img.img-circle(src='../dlcf/'+kindfoods.path+'/'+fooditem.image, alt='')
+                                                .food-menu-desc
+                                                    h5
+                                                        span.extrabold= fooditem.jpname
+                                                    p= fooditem.description
+                                                    .food-menu-details
+                                                        span.food-menu-weight
+                                                        |価格:
+                                                        span.food-menu-price ￥
+                                                          = fooditem.price
+                                        // end .food-menu-item
+                                    // end .col
+                            // end .special-tab-content
+                        #f8.special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../images/1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                |  as Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |  as
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                |  as Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |  as
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                |  as Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |  as
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                |  as Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |  as
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                |  as Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |  as
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='100')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='../menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                |  as Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |  as
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                    // end .special-tab
+                // end .row
+            // end .container
+        //script(type='text/javascript', src='../menu/shrimpy/libs/js')
+        //script(src='../menu/shrimpy/libs/main.js')
+        // Scripts
+        //if lt IE 9
+          script(type='text/javascript', src='scripts/jquery-1.11.0.min.js?ver=1')
+        // [if (gte IE 9) | (!IE)] <!
+        #confirmMyOrder.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel.modal-title プロンプト
+                    .modal-body
+                        h4 あなたはまだ選択しますか？それが決定された場合、私たちはあなたのためにすぐに準備ができて
+                    .modal-footer
+                        button.reOrder.btn.btn-default.btn-lg(type='button', data-dismiss='modal') ちょうどまで
+                        button#confirmedOrder.btn.btn-success.btn-lg(type='button', data-dismiss='modal') はい
+        #emptyOrder.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel.modal-title プロンプト
+                    .modal-body
+                        h4 あなたはアラカルトではなく、メニューバーを参照してください。
+                    .modal-footer
+                        button.reOrder.btn.btn-success.btn-lg(type='button', data-dismiss='modal') はい
+        #myOrder.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .modal-header
+                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                span(aria-hidden='true') ×
+                            h4#myModalLabel.modal-title プロンプト
+                    .modal-body
+                        h4 あなたはアラカルトではなく、メニューバーを参照してください。
+                    .modal-footer
+                        button.btn.btn-success.btn-lg(type='button', data-dismiss='modal') はい
+        #payOrder.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    //.modal-header
+                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                span(aria-hidden='true') ×
+                            h4#myModalLabel.modal-title Let me Pay
+                    .modal-body
+                        h4 あなたがチェックアウトを行って、何をチェックアウトしてもよろしいです
+                    .modal-footer
+                        button.btn.btn-default.btn-lg(type='button', data-dismiss='modal') ちょうどまで
+                        button.btn.btn-danger.btn-lg(type='button') 会計
+        #foodIntroducationBox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+            .modal-dialog.modal-lg
+                .modal-content
+                    //.modal-header.foodIntroductionHeader
+                        button.close(type='button', data-dismiss='modal', aria-label='Close')
+                            span(aria-hidden='true') ×
+                        h4#myModalLabel.modal-title Let me Pay
+                    .modal-body.foodIntroductionBody
+                        .col-md-7.side-image-left
+                            .image-slider.owl-carousel.animated(data-animation='fadeInLeft', data-animation-delay='200')
+                                .swiper-slide
+                                    img#foodimage(src='../menu/shrimpy/libs/about_image_1.jpg', alt='')
+                                .swiper-slide
+                                    img(src='../menu/shrimpy/libs/about_image_2.jpg', alt='')
+                        .col-md-5
+                            h3#foodname.foodTitle 玉米烫
+                            //span.label.label-success 限定
+                            //span.label.label-danger 大卖
+                            h6#fooddescrip.foodDescription 夏季限定で提供する同メニュー。正式名称は「紅茶ベーススープでいただくスプティーノそうめん」で、洋風のトッピングを施したそうめんに紅茶ベースの特製トマトスープを注ぎ、冷製スープパスタのようにフォークとスプーンで食べる。
+                        .col-md-5.foodSubInfo
+                            .food-menu-details
+                                span.food-menu-weight
+                                | 価格:
+                                span.food-menu-price ￥
+                                span#foodprice.food-menu-price 680
+                    .modal-footer
+                        //button.btn.btn-danger(type='button', data-dismiss='modal') だめ
+                        button#addFood.btn.btn-danger.btn-lg(type='button') 追加
+        #initInfoBox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery-2.1.0.min.js')
+        // <![endif]
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.easing.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.prettyPhoto.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.tools.min.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.stickyfooter.min.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/owl.carousel.min.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.nav.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.scrollTo.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.sticky.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/jquery.appear.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/responsiveslides.min.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/verge.min.js')
+        script(type='text/javascript', src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
+        script(type='text/javascript', src='../menu/shrimpy/libs/custom.js')
+        script(type='text/javascript', src='../socketio/socket.io.min.js')
+        script(type='text/javascript', src='../socketio/string.min.js')
+        script(type='text/javascript', src='../socketio/moment-with-langs.js')
+        script(type='text/javascript', src='../socketio/comm.js')
+        script(type='text/javascript', src='../socketio/status.js')
+        script(type='text/javascript', src='../socketio/servoAdapter.js')
+        script(type='text/javascript', src='../socketio/init.js')
+        script(type='text/javascript', src='../javascripts/post.js')
+        script(type='text/javascript', src='../javascripts/menu.js')
+        script(type='text/javascript', src='../javascripts/menuStateChecker.js')
+        script(src='../plugins/notify.min.js')
+
+

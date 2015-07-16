@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <meta name="msapplication-TileColor" content="#5bc0de"/>
+    <meta name="msapplication-TileImage" content="{{assets}}/img/metis-tile.png"/>
+
+    <!-- Bootstrap -->
+    {{#if rtl}}
+    <link rel="stylesheet" href="{{assets}}/lib/bootstrap/css/bootstrap.rtl.css">
+    {{else}}
+    <link rel="stylesheet" href="{{assets}}/lib/bootstrap/css/bootstrap.min.css">
+    {{/if}}
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="{{assets}}/lib/font-awesome/css/font-awesome.min.css">
+    <!-- Metis core stylesheet -->
+    {{#if rtl}}
+    <link rel="stylesheet" href="{{assets}}/css/main.rtl.css">
+    {{else}}
+    <link rel="stylesheet" href="{{assets}}/css/main.min.css">
+    {{/if}}
+
+    <link rel="stylesheet" href="{{assets}}/css/countdown.css">
+
+    {{#if rtl}}
+    <style>body{direction: rtl;}</style>
+    {{/if}}
+
+    {{#if analytics}}
+    {{analytics google.analytics 'head'}}
+    {{/if}}
+</head>
+<body class="bg-dark lter">
+{{>body}}
+</body>
+</html>

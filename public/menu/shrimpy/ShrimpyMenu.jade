@@ -1,0 +1,1398 @@
+doctype html
+html.ext-strict(xmlns='http://www.w3.org/1999/xhtml')
+    // <![endif]
+    head
+        meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+        title Shrimpy - Homepage
+        meta(name='format-detection', content='telephone=no')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        // Styles
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/font-awesome.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/prettyPhoto.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/bootstrap.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/owl.carousel.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/owl.theme.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/animate.min.css', media='screen')
+        link(rel='stylesheet', type='text/css', href='./menu/shrimpy/libs/style.css', media='screen')
+    body.ext-webkit.ext-chrome
+        header#header
+            #logo.text-center.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='400', style='margin-left: -88.5px;')
+                a(href='index.html')
+                    img(src='./menu/shrimpy/libs/logo.png', alt='Logo')
+            // end logo
+            #slideshow
+                ul.rslides.rslides1
+                    li#rslides1_s0.rslides1_on(style='display: block; float: left; position: relative; opacity: 1; z-index: 2; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_1.jpg);')
+                        img(src='./menu/shrimpy/libs/slide_img_1.jpg', alt='')
+                        .slideshow-caption
+                            h1
+                                | Best 
+                                span.highlight seafood
+                                | in town
+                            h3 Prepared by world famous cooks
+                            .button
+                                a(href='#') Make a reservation
+                        // end .slideshow-caption
+                    // end .slideshow item
+                    li#rslides1_s1(style='float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_2.jpg);')
+                        img(src='./menu/shrimpy/libs/slide_img_2.jpg', alt='')
+                        .slideshow-caption
+                            h1
+                                | Best 
+                                span.highlight kebab
+                                | in town
+                            h3 Prepared by world famous cooks
+                            .button
+                                a(href='#') Make a reservation
+                        // end .slideshow-caption
+                    // end .slideshow item
+                    li#rslides1_s2(style='float: none; position: absolute; opacity: 0; z-index: 1; display: list-item; transition: opacity 500ms ease-in-out; -webkit-transition: opacity 500ms ease-in-out; height: auto; background-image: url(images/slide_img_3.jpg);')
+                        img(src='./menu/shrimpy/libs/slide_img_3.jpg', alt='')
+                        .slideshow-caption
+                            h1
+                                | Best 
+                                span.highlight salad
+                                | in town
+                            h3 Prepared by world famous cooks
+                            .button
+                                a(href='#') Make a reservation
+                        // end .slideshow-caption
+                    // end .slideshow item
+                ul.rslides_tabs.rslides1_tabs
+                    li.rslides1_s1.rslides_here
+                        a.rslides1_s1(href='#') 1
+                    li.rslides1_s2
+                        a.rslides1_s2(href='#') 2
+                    li.rslides1_s3
+                        a.rslides1_s3(href='#') 3
+            // end slideshow
+        #navigation-sticky-wrapper.sticky-wrapper.is-sticky(style='height: 80px;')
+            nav#navigation(style='position: fixed; top: 0px;')
+                .nav-container
+                    ul
+                        li
+                            a.active(href='#welcome') Welcome
+                        li
+                            a(href='#about')
+                                | About 
+                                span.extrabold Us
+                        li
+                            a(href='#special-gallery')
+                                | Daily 
+                                span.extrabold Specialties
+                        li
+                            a(href='#gallery')
+                                | Seafood 
+                                span.extrabold Dishes
+                        li.current
+                            a(href='#big-menu')
+                                | Our 
+                                span.extrabold Menu
+                        li
+                            a(href='#cooks')
+                                | Our 
+                                span.extrabold Cooks
+                        li
+                            a(href='#blog')
+                                | Our 
+                                span.extrabold Blog
+                        li
+                            a(href='#contact')
+                                | Contact 
+                                span.extrabold Us
+                // end .nav-container
+        #mobile-navigation-sticky-wrapper.sticky-wrapper.is-sticky(style='height: 67px;')
+            nav#mobile-navigation(style='position: fixed; top: 0px;')
+                .mobile-nav-container
+                    #menu-toggle
+                        i.fa.fa-bars
+                    ul.inactive
+                        li
+                            a.active(href='#welcome') Welcome
+                        li
+                            a(href='#about')
+                                | About 
+                                span.extrabold Us
+                        li
+                            a(href='#special-gallery')
+                                | Daily 
+                                span.extrabold Specialties
+                        li
+                            a(href='#gallery')
+                                | Seafood 
+                                span.extrabold Dishes
+                        li
+                            a(href='#big-menu')
+                                | Our 
+                                span.extrabold Menu
+                        li
+                            a(href='#cooks')
+                                | Our 
+                                span.extrabold Cooks
+                        li
+                            a(href='#blog')
+                                | Our 
+                                span.extrabold Blog
+                        li
+                            a(href='#contact')
+                                | Contact 
+                                span.extrabold Us
+                // end .mobile-nav-container
+        section#big-menu.big-menu.section
+            img#food-logo(src='./menu/shrimpy/libs/food_logo.png', alt='')
+            .container
+                .row
+                    .section-title.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='700')
+                        h2
+                            span.extrabold Our
+                            | Menu
+                        .section-title-line(style='width: 280px;')
+                            .section-title-icon
+                                img(src='./menu/shrimpy/libs/shrimp_icon.png', alt='')
+                            hr
+                        p
+                            | Grenadier jackfish arowana temperate perch bonytongue seamoth sea devil longfin Alaska blackfish
+                            br
+                            | yellow weaver. Elephant fish great white shark slipmouth pencilsmelt, popeye catafula African
+                            br
+                            | lungfish. Rough scad roanoke bass. Codlet Molly Miller.
+                    // end .section-title
+                    .special-tab
+                        ul.special-tabs-titles
+                            li.current
+                                .food-icon-1
+                                span Steaks
+                            li
+                                .food-icon-2
+                                span Vegetarian
+                            li
+                                .food-icon-3
+                                span Cheese Based
+                            li
+                                .food-icon-4
+                                span Hot Dishes
+                            li
+                                .food-icon-5
+                                span Fish
+                            li
+                                .food-icon-6
+                                span Chicken
+                            li
+                                .food-icon-7
+                                span Pizza
+                            li
+                                .food-icon-8
+                                span Pasta
+                            li
+                                .food-icon-9
+                                span Sushi
+                            li
+                                .food-icon-10
+                                span Soft Drinks
+                        .special-tab-content(style='display: block;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 450g
+                                                |
+                                                span.food-menu-price $89
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_2.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Lamb
+                                                | Steak with Cheese
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 380g
+                                                |
+                                                span.food-menu-price $115
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_3.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Veal
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 520g
+                                                |
+                                                span.food-menu-price $85
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated.fadeInUp.visible(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 450g
+                                                |
+                                                span.food-menu-price $89
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_2.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Lamb
+                                                | Steak with Cheese
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 380g
+                                                |
+                                                span.food-menu-price $115
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_3.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Veal
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 520g
+                                                |
+                                                span.food-menu-price $85
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 450g
+                                                |
+                                                span.food-menu-price $89
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_2.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Lamb
+                                                | Steak with Cheese
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 380g
+                                                |
+                                                span.food-menu-price $115
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_3.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Veal
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 520g
+                                                |
+                                                span.food-menu-price $85
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 450g
+                                                |
+                                                span.food-menu-price $89
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_2.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Lamb
+                                                | Steak with Cheese
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 380g
+                                                |
+                                                span.food-menu-price $115
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_3.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Veal
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 520g
+                                                |
+                                                span.food-menu-price $85
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_1.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 450g
+                                                |
+                                                span.food-menu-price $89
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_2.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Lamb
+                                                | Steak with Cheese
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 380g
+                                                |
+                                                span.food-menu-price $115
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_3.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Veal
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 520g
+                                                |
+                                                span.food-menu-price $85
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                        .special-tab-content(style='display: none;')
+                            .row
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_4.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Deer
+                                                | Steak with Potatoes
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 630g
+                                                |
+                                                span.food-menu-price $158
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_5.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Pork
+                                                | Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 280g
+                                                |
+                                                span.food-menu-price $55
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_6.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Spicy
+                                                | Lamb Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 490g
+                                                |
+                                                span.food-menu-price $105
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_7.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Marinated
+                                                | Pork Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 390g
+                                                |
+                                                span.food-menu-price $78
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_8.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold BBQ
+                                                | Veal Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 425g
+                                                |
+                                                span.food-menu-price $70
+                                    // end .food-menu-item
+                                // end .col
+                                .col-md-4.col-sm-6.col-xs-6
+                                    .food-menu-item.animated(data-animation='fadeInUp', data-animation-delay='1000')
+                                        .pull-left.food-menu-item-img-outer
+                                            img.img-circle(src='./menu/shrimpy/libs/circle_dish_img_9.jpg', alt='')
+                                        .food-menu-desc
+                                            h5
+                                                span.extrabold Seasoned
+                                                | Deer Steak
+                                            p Grenadier jackfish arowana temperate perch weaver.
+                                            .food-menu-details
+                                                span.food-menu-weight 580g
+                                                |
+                                                span.food-menu-price $69
+                                    // end .food-menu-item
+                                // end .col
+                        // end .special-tab-content
+                    // end .special-tab
+                // end .row
+            // end .container
+        script(type='text/javascript', src='./menu/shrimpy/libs/js')
+        script(src='./menu/shrimpy/libs/main.js')
+        script.
+          var latlng=new google.maps.LatLng(40.734771,-74.009628);
+          function initialize() {
+          var mapProp = {
+          center:latlng,
+          scrollwheel: false,
+          zoom:7,
+          zoomControl:true,
+          mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+          navigationControl: true,
+          navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+          panControl:true,
+          mapTypeId:google.maps.MapTypeId.ROADMAP
+          };
+          var map=new google.maps.Map(document.getElementById("google-map-id"),mapProp);
+          var marker=new google.maps.Marker({
+          position:latlng,
+          map: map,
+          title: ''
+          });
+          marker.setMap(map);
+          var infowindow = new google.maps.InfoWindow({
+          content:"New York, NY"
+          });
+          google.maps.event.addListener(marker, 'click', function() {
+          infowindow.open(map,marker);
+          });
+          }
+          google.maps.event.addDomListener(window, 'load', initialize);
+        // Scripts
+        //if lt IE 9
+          script(type='text/javascript', src='scripts/jquery-1.11.0.min.js?ver=1')
+        // [if (gte IE 9) | (!IE)] <!
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery-2.1.0.min.js')
+        // <![endif]
+        script(src='./menu/shrimpy/libs/jquery.easing.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.prettyPhoto.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.tools.min.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/owl.carousel.min.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.nav.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.scrollTo.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.sticky.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/jquery.appear.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/responsiveslides.min.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/verge.min.js')
+        script(type='text/javascript', src='./menu/shrimpy/libs/custom.js')
+                                                                     

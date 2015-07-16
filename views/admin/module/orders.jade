@@ -1,0 +1,149 @@
+//
+   Created by zhang on 15/6/7.
+
+section.content-header
+   h1
+      | 订单
+      small 管理
+   ol.breadcrumb
+      li
+         a(href='#')
+            i.fa.fa-dashboard
+            | 主页
+      li.active 订单管理
+
+section.content
+   // Small boxes (Stat box)
+   //.row
+      .col-lg-3.col-xs-6
+         // small box
+         .small-box.bg-aqua
+            .inner
+               h3 150
+               p New Orders
+            .icon
+               i.ion.ion-bag
+            a.small-box-footer(href='#')
+               | More info
+               i.fa.fa-arrow-circle-right
+      // ./col
+      .col-lg-3.col-xs-6
+         // small box
+         .small-box.bg-green
+            .inner
+               h3
+                  | 53
+                  sup(style='font-size: 20px') %
+               p Bounce Rate
+            .icon
+               i.ion.ion-stats-bars
+            a.small-box-footer(href='#')
+               | More info
+               i.fa.fa-arrow-circle-right
+      // ./col
+      .col-lg-3.col-xs-6
+         // small box
+         .small-box.bg-yellow
+            .inner
+               h3 44
+               p User Registrations
+            .icon
+               i.ion.ion-person-add
+            a.small-box-footer(href='#')
+               | More info
+               i.fa.fa-arrow-circle-right
+      // ./col
+      .col-lg-3.col-xs-6
+         // small box
+         .small-box.bg-red
+            .inner
+               h3 65
+               p Unique Visitors
+            .icon
+               i.ion.ion-pie-graph
+            a.small-box-footer(href='#')
+               | More info
+               i.fa.fa-arrow-circle-right
+      // ./col
+   // /.row
+   // Main row
+   .row
+      // Left col
+      section.col-lg-6.connectedSortable
+         - var i = 0
+         - each order, index in orders
+            - i++
+            if( i % 2 == 1 )
+               .box
+                  .box-header
+                     h3.box-title [
+                        = i
+                        | ][
+                        =order.deskInfo
+                        |]
+                     span -[
+                        = order.date
+                        | ]
+                  // /.box-header
+                  .box-body.no-padding
+                     table.table.table-condensed
+                        tbody
+                           tr
+                              th(style='width: 10px') #
+                              th 菜品
+                              th(style='width: 40px') 数量
+                              th(style='width: 50px') 单价
+                           - var n = 0
+                           - each food, foodindex in order.foods
+                              if(food.count > 0)
+                                 tr
+                                    td= ++n
+                                    td= food.foodname
+                                    td= food.count
+                                    td
+                                       span ￥
+                                          = food.foodprice
+                  .box-footer.clearfix
+                     span.pull-right 合计:￥
+                        = order.lumpsum
+               // /.box-body
+      section.col-lg-6.connectedSortable
+         - var i = 0
+         - each order, index in orders
+            - i++
+            if( i % 2 == 0 )
+               .box
+                  .box-header
+                     h3.box-title [
+                        = i
+                        | ][
+                        =order.deskInfo
+                        |]
+                     span -[
+                        = order.date
+                        | ]
+                  // /.box-header
+                  .box-body.no-padding
+                     table.table.table-condensed
+                        tbody
+                           tr
+                              th(style='width: 10px') #
+                              th 菜品
+                              th(style='width: 40px') 数量
+                              th(style='width: 50px') 单价
+                           - var n = 0
+                           - each food, foodindex in order.foods
+                              if(food.count > 0)
+                                 tr
+                                    td= ++n
+                                    td= food.foodname
+                                    td= food.count
+                                    td
+                                       span ￥
+                                          = food.foodprice
+                  .box-footer.clearfix
+                     span.pull-right 合计:￥
+                        = order.lumpsum
+   // /.Left col
+      // right col (We are only adding the ID to make the widgets sortable)
+// /.content

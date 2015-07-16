@@ -1,0 +1,46 @@
+//
+   Created by zhang on 15/6/7.
+if (Object.keys(orderData.foods).length > 0)
+   .modal-dialog
+      .modal-content
+         .modal-header.myOrderTitle
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+               span(aria-hidden='true') ×
+            h4#myModalLabel.modal-title 注文内容
+         .modal-body.food-order-body
+            .row
+               - each food in orderData.foods
+                  .col-sm-8.col-xs-8
+                     .food-order-item
+                        .pull-left.orderListItem
+                           img.img-circle.orderListItem(src=food.foodimage, alt='')
+                        .food-ItemLine-desc
+                           .food-order-item-title
+                              span.extrabold= food.foodname
+                           .food-menu-details
+                              span.food-menu-weight
+                              | 価格:
+                              span.food-menu-price $
+                              span.food-menu-price= food.foodprice
+                  .col-sm-4.col-xs-4.food-item-panel
+                     button.btn.btn-info.btn-sm.food-order-div.pull-left(type='button',foodname= food.foodname) -
+                     button.btn.btn-info.btn-sm.food-order-plus.pull-right(type='button',foodname= food.foodname) +
+                     span.food-menu-count.pull-right= food.count
+         .modal-footer
+            | 注文合計:
+            span.food-order-lumpsum.food-menu-price ￥
+            span#orderLumpSum.food-order-lumpsum.food-menu-price= orderData.lumpsum
+         .modal-footer
+            button.btn.btn-default.btn-lg(type='button', data-dismiss='modal') ちょうどまで
+            button#submitOrder.btn.btn-danger.btn-lg(type='button') 注文を確定する
+else
+   .modal-dialog
+      .modal-content
+         .modal-header
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+               span(aria-hidden='true') ×
+            h4#myModalLabel.modal-title プロンプト
+         .modal-body
+            h4 あなたはアラカルトではなく、メニューバーを参照してください。
+         .modal-footer
+            button.btn.btn-success.btn-lg(type='button', data-dismiss='modal') はい

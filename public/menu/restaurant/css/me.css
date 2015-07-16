@@ -1,0 +1,13 @@
+body {
+    　font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+h6{
+    color:#000101;
+}
+
+.container{
+    height:450px;
+    
+    background-image:url(bg.png);
+}

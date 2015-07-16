@@ -1,0 +1,30 @@
+//
+   Created by zhang on 15/6/14.
+td.listId= tablet.id
+td= tablet.name
+td= tablet.info
+td
+   if(tablet.state == "Unregistered"  || tablet.state == "unknown")
+      span.label.label-default 未注册
+   else if(tablet.state == "On")
+      span.label.label-success 已开台
+   else if(tablet.state == "Off" || tablet.state == "off")
+      span.label.label-warning 未开台
+   else if(tablet.state == "Offline")
+      span.label.label-danger 离线
+   else if(tablet.state == "Disabled")
+      span.label.label-default 停用
+td
+   .btn-group.btn-group-sm.pull-right(role='group', aria-label='Small button group')
+      if(tablet.state == "Unregistered" || tablet.state == "unknown")
+         button.btn.btn-info.tabletRegister(type='button',clientId= tablet.serialId) 注册
+      if(tablet.state == "On")
+         button.btn.btn-primary.tabletOff(type='button',clientId= tablet.serialId) 关台
+      if(tablet.state == "Off" || tablet.state == "off")
+         button.btn.btn-success.tabletOn(type='button',clientId= tablet.serialId) 开台
+      if(tablet.state == "Offline" || tablet.state == "Off" || tablet.state == "off")
+         button.btn.btn-warning.tabletStop(type='button',clientId= tablet.serialId) 停用
+      if(tablet.state == "Offline" || tablet.state == "Off" || tablet.state == "off")
+         button.btn.btn-danger.tabletDel(type='button',clientId= tablet.serialId) 删除
+      if(tablet.state == "Disabled")
+         button.btn.btn-success.tabletEnable(type='button',clientId= tablet.serialId) 启用

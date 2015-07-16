@@ -1,0 +1,46 @@
+html
+   head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width,initial-scale=1.0')
+      link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+      link(href='../menu/restaurant/me.css', rel='stylesheet')
+   body
+      .container
+            .row.mainArea
+               .col-xs-8.mainMenu
+                  .menuItem
+                     img(src='../menu/restaurant/images/qiancai.png', style='')
+                  .menuItem
+                     img(src='../menu/restaurant/images/haixian.png')
+                  .menuItem
+                     .col-xs-6
+                        img(src='../menu/restaurant/images/yecai.png')
+                     .col-xs-6
+                        img(src='../menu/restaurant/images/row.png')
+                  .row.menuItem.areaH
+                     img.col-xs-4.left(src='../menu/restaurant/images/dianxin.png')
+                     img.col-xs-4(src='../menu/restaurant/images/fanmian.png')
+                     img.col-xs-4.right(src='../menu/restaurant/images/drink.png')
+               .col-xs-1
+                  span#welcome 欢迎光临   请从触摸屏点菜
+               .col-xs-4.sideMenu
+                  .menuItem.areaH.highlightBox
+                     img(src='../menu/restaurant/images/zhongcan.png')
+                  .menuItem.yidian
+                     img(src='../menu/restaurant/images/yidian.png')
+                  .menuItem.service
+                     img(src='../menu/restaurant/images/fuwu.png')
+            .row.footbar
+               .col-xs-2.footBtn
+                  img(src='../menu/restaurant/images/zhucaidan.png')
+               .col-xs-2.footBtn
+                  img(src='../menu/restaurant/images/huiji.png')
+               .col-xs-4.footBtn.footInput
+                  textarea.form-control(rows='1') 本店信息
+               #callbtn.col-xs-2.footBtn
+                  img(src='../menu/restaurant/images/hujiao.png')
+               .col-xs-2.footBtn.clientInfoBox
+                  span#clientInfo A3-25
+      script(type='text/javascript', src='../bower_components/jquery/dist/jquery.min.js')
+      script(type='text/javascript', src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
+      script(type='text/javascript', src='../menu/restaurant/resize.js')
