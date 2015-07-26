@@ -1,46 +1,296 @@
-html
+html(xmlns='http://www.w3.org/1999/xhtml')
    head
-      meta(charset='utf-8')
-      meta(name='viewport', content='width=device-width,initial-scale=1.0')
-      link(href='../bower_components/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
-      link(href='../menu/restaurant/me.css', rel='stylesheet')
+      meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+      link(type='text/css', rel='stylesheet', href='dlcf/css/style.css')
+      link(type='text/css', rel='stylesheet', href='dlcf/css/medical.css')
+      link(type='text/css', rel='stylesheet', href='dlcf/css/global1.css')
+      script(type='text/javascript', src='../menu/dlcf/js/jquery-1.10.1.min.js')
+      script(type='text/javascript', src='../menu/dlcf/js/code.js')
    body
-      .container
-            .row.mainArea
-               .col-xs-8.mainMenu
-                  .menuItem
-                     img(src='../menu/restaurant/images/qiancai.png', style='')
-                  .menuItem
-                     img(src='../menu/restaurant/images/haixian.png')
-                  .menuItem
-                     .col-xs-6
-                        img(src='../menu/restaurant/images/yecai.png')
-                     .col-xs-6
-                        img(src='../menu/restaurant/images/row.png')
-                  .row.menuItem.areaH
-                     img.col-xs-4.left(src='../menu/restaurant/images/dianxin.png')
-                     img.col-xs-4(src='../menu/restaurant/images/fanmian.png')
-                     img.col-xs-4.right(src='../menu/restaurant/images/drink.png')
-               .col-xs-1
-                  span#welcome 欢迎光临   请从触摸屏点菜
-               .col-xs-4.sideMenu
-                  .menuItem.areaH.highlightBox
-                     img(src='../menu/restaurant/images/zhongcan.png')
-                  .menuItem.yidian
-                     img(src='../menu/restaurant/images/yidian.png')
-                  .menuItem.service
-                     img(src='../menu/restaurant/images/fuwu.png')
-            .row.footbar
-               .col-xs-2.footBtn
-                  img(src='../menu/restaurant/images/zhucaidan.png')
-               .col-xs-2.footBtn
-                  img(src='../menu/restaurant/images/huiji.png')
-               .col-xs-4.footBtn.footInput
-                  textarea.form-control(rows='1') 本店信息
-               #callbtn.col-xs-2.footBtn
-                  img(src='../menu/restaurant/images/hujiao.png')
-               .col-xs-2.footBtn.clientInfoBox
-                  span#clientInfo A3-25
-      script(type='text/javascript', src='../bower_components/jquery/dist/jquery.min.js')
-      script(type='text/javascript', src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
-      script(type='text/javascript', src='../menu/restaurant/resize.js')
+      .welcome
+         img(src='../menu/dlcf/image/shouye.png', height='100%', width='100%')
+      #mainMenu.menu
+         ul
+            .auzo
+               img#qcBtn(src='../menu/dlcf/image/a.png')
+               img#hxBtn(src='../menu/dlcf/image/b.png')
+               img#hcBtn(src='../menu/dlcf/image/c.png', style='width: 49%;float: left;')
+               img#rouBtn(src='../menu/dlcf/image/d.png', style='width: 49%;float: right;')
+               img#tdBtn(src='../menu/dlcf/image/e.png', style='width: 31%;float: left;padding-right: 3%;')
+               img#zsBtn(src='../menu/dlcf/image/f.png', style='width: 31%;float: left;padding-right: 3%;')
+               img#drinkBtn(src='../menu/dlcf/image/g.png', style='width: 31%;float: left;')
+            .auzo1
+               img(src='../menu/dlcf/image/z.png', style='width: 72%;float: left;padding-left: 2%;')
+            .auzo2
+               img#tjBtn(src='../menu/dlcf/image/h.png', style='width: 95%;')
+               img#dxBtn(src='../menu/dlcf/image/i.png', style='width: 85%;')
+               img#serviceBtn(src='../menu/dlcf/image/j.png', style='width: 85%;')
+      #notificationPanel.menu
+         ul
+            .lm1
+               img(src='../menu/dlcf/image/t1.png', style='width: 98%;float: left;')
+            .lm2
+               img(src='../menu/dlcf/image/t2.png', style='width: 98%;float: left;')
+            div
+               // 效果开始
+               .bd_con4
+                  .bd_c4r
+                     .bd_c4top
+                        img.bd_lbtn(src='../menu/dlcf/image/zuo.png')
+                        .bd_chgBox
+                           .bd_long
+                              ul
+                                 li
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                 li
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                 li
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                                    a 当店からのお知らせ1
+                        img.bd_rbtn(src='../menu/dlcf/image/you.png')
+      #MenuPanel.menu
+         ul
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e1.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e2.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e3.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e4.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e5.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e6.png', style='width: 98%;float: left;')
+            .lm3
+               a
+                  img(src='../menu/dlcf/image/e7.png', style='width: 98%;float: left;')
+            div
+               // 效果开始
+               .bd_c4top
+                  img.bd_lbtn(src='../menu/dlcf/image/zuo.png')
+                  .bd_cpBox
+                     .bd_cplong
+                        ul
+                           .tuanbox
+                              .pic
+                                 img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    a.countlabelbtn.div
+                                    dt 5
+                                    a.countlabelbtn.plus
+                                 .wybuy 800
+                           .tuanbox
+                              .pic
+                                 a
+                                    img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    a.countlabelbtn.div
+                                    dt 5
+                                    a.countlabelbtn.plus
+                                 .wybuy 800
+                           .tuanbox
+                              .pic
+                                 a
+                                    img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    dt 5
+                                 .wybuy 800
+                           .tuanbox
+                              .pic
+                                 a
+                                    img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    a.countlabelbtn.div
+                                    dt 5
+                                    a.countlabelbtn.plus
+                                 .wybuy 800
+                           .tuanbox
+                              .pic
+                                 a
+                                    img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    a.countlabelbtn.div
+                                    dt 5
+                                    a.countlabelbtn.plus
+                                 .wybuy 800
+                           .tuanbox
+                              .pic
+                                 a
+                                    img(src='../menu/dlcf/image/cai.png')
+                              .tuanlist
+                                 dd
+                                    a 水煮牛肉
+                                 .price からのお知らせ
+                                 .lg
+                                    img(src='../menu/dlcf/image/xing.png')
+                                 .countlabel
+                                    img(src='../menu/dlcf/image/sl.png')
+                                    a.countlabelbtn.div
+                                    dt 5
+                                    a.countlabelbtn.plus
+                                 .wybuy 800
+                  img.bd_rbtn(src='../menu/dlcf/image/you.png')
+      #orderPanel.menu
+         .Layer1(style='/* position:absolute; */ width:100%; height:100%; z-index:-1')
+            img(src='../menu/dlcf/image/tc.png', height='100%', width='100%')
+         div(style='text-align:center;margin-top: -550;position: absolute;')
+            table(width='92%', border='0', align='center', cellpadding='0', cellspacing='0', style='margin-top: 5%;')
+               tbody
+                  tr
+                     td.biati(align='left', valign='middle')
+                        img(src='../menu/dlcf/image/cd.png', height='65%')
+                        |   ご注文した商品からもう一度注文するものを選んで頂ければ
+                  tr
+                     td
+                        table(width='93%', border='0', align='center', cellpadding='0', cellspacing='0', style='margin-top: 3%;')
+                           tbody
+                              tr
+                                 td(width='69%')
+                                    table(width='96%', border='1', align='center', cellpadding='0', cellspacing='0')
+                                       tbody#orderList
+                                          tr
+                                             td.bkdi ご選択中の商品名
+                                             td.bkdi 数
+                                             td.bkdi 合計
+                                             td.bkdi(style='width: 9%;')  減
+                                             td.bkdi(style='width: 9%;') 増
+                                          tr
+                                             td.bkdi1(align='left') トマトと玉子炒め
+                                             td.bkdi1 99
+                                             td.bkdi1 99999円
+                                             td.bkdi1
+                                                a
+                                                   img(src='../menu/dlcf/image/jia.png', height='75%')
+                                             td.bkdi1
+                                                a
+                                                   img(src='../menu/dlcf/image/jian.png', height='75%')
+                                          tr
+                                             td.bkdi1(align='left')  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                          tr
+                                             td.bkdi1(align='left')  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                          tr
+                                             td.bkdi1(align='left')  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                          tr
+                                             td.bkdi1(align='left')  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                          tr
+                                             td.bkdi1(align='left')  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                             td.bkdi1  
+                                    table(width='93%', border='0', align='center', cellpadding='0', cellspacing='0')
+                                       tbody
+                                          tr
+                                             td(colspan='5', align='left', style='border: none;')
+                                                a
+                                                   img(src='../menu/dlcf/image/xia.png', height='100%', width='100%')
+                                          tr
+                                             td.bkdi2(colspan='5', align='left') ※表示価格は税抜き価格です
+                                 td(width='30%', valign='top')
+                                    table(border='0', align='center', cellpadding='0', cellspacing='0')
+                                       tbody
+                                          tr
+                                             td.bkdi3
+                                                | ご代わりの内容を今一度ご確認の上、下の　
+                                                img(src='../menu/dlcf/image/biao.png', height='25%')
+                                                |    ボタンにタッチしてください
+                                          tr
+                                             td.bkdi4(align='center') ご選択お代わり商品の合計金額
+                                          tr
+                                             td
+                                                input.add2(type='text', name='user', value='税抜き99999円')
+                                          tr
+                                             td
+                                                a
+                                                   img#orderCancel.add(src='../menu/dlcf/image/q.png', height='60%')
+                                                a
+                                                   img#orderOk.add1(src='../menu/dlcf/image/qd.png', height='60%')
+                                          tr
+                                             td.bkdi5(align='center') ※すべてのお代わり商品を取り消します
+            .swiper-scrollbar
+      #confirmAlert.alertWindow
+         div(style='width: 507px;margin: 0 auto;margin-top: 17%;')
+            img(src='../menu/dlcf/image/hs.png', height='50%', style='width: 507px;z-index:-10;  height: 50%;')
+            div(style='  margin-top: -101px;text-align: center;')
+               img#confirmAlertNo.leftbtn(src='../menu/dlcf/image/no.png')
+               img#confirmAlertYes.rightbtn(src='../menu/dlcf/image/yes.png')
+      #toolBar
+         ul.toollist
+            #topMenu.dibu
+               img(src='../menu/dlcf/image/k.png', style='width: 100%;')
+            #countNow.dibu1
+               img(src='../menu/dlcf/image/l.png', style='width: 100%;')
+            #notificationBar.dibu2
+               input.form_keywords(name='Keywords', value='', type='text', placeholder='当店からのお知らせ')
+            #call.dibu3
+               img(src='../menu/dlcf/image/m.png', style='width: 100%;')
+            #clientLabel.dibu4
+               | A3
+               br
+               | 25
