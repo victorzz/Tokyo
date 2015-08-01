@@ -25,6 +25,7 @@
 		"string":"*",
 		"socket.io":"~1.2.1",
         "MD5":"*",
-        "crypto":"*"
+        "crypto":"*",
+        "node-cmd":"*"
     }
 }

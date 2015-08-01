@@ -10,6 +10,7 @@ var comm = require('../comm');
 var EventProxy = require('eventproxy');
 var jade = require('jade');
 var fs = require('fs');
+var cmd=require('node-cmd');
 
 //Start------------------socketio-----------------------
 var socketIO = require('../socketio');
@@ -118,6 +119,20 @@ var updateClientLineState = function (res, data, actionComment, clientId, state,
     });
 }
 
+var printOrder = function(order){
+    var head = "java -jar print.jar 192.168.1.50 9100 ";
+
+    cmd.run(head+'"大连厨房"');
+    cmd.run(head+'"----------------"');
+
+    var n = 1;
+    for(var i in order.foods){
+        var c = head+'"'+n+' '+i+'  '+order.foods[i].count+'*'+order.foods[i].foodprice+' = '+order.foods[i].foodprice*order.foods[i].count+'"';
+        console.log("printLine:"+c);
+        cmd.run(c);
+    }
+}
+
 exports.reqData = function (req, res) {
     var data = req.body;
     //logger.info('reqData reqCmd:' + data.reqCmd);
@@ -135,6 +150,7 @@ exports.reqData = function (req, res) {
             return;
         } else if (data.reqType == "confirmedOrder") {
             orderDB.addOrder(data.order, data.clientId);
+            printOrder(data.order);
             res.send(tdata);
             return;
         } else if (data.reqType == "reqState") {

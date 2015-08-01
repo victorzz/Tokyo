@@ -1,84 +1,132 @@
 html(xmlns='http://www.w3.org/1999/xhtml')
    head
       meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-      link(type='text/css', rel='stylesheet', href='dlcf/css/style.css')
-      link(type='text/css', rel='stylesheet', href='dlcf/css/medical.css')
-      link(type='text/css', rel='stylesheet', href='dlcf/css/global1.css')
-      script(type='text/javascript', src='../menu/dlcf/js/jquery-1.10.1.min.js')
-      script(type='text/javascript', src='../menu/dlcf/js/code.js')
+      meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+      meta(name='apple-mobile-web-app-capable', content='yes')
+      title 首页
+      link(href='dlcf/css/style.css', type='text/css', rel='stylesheet')
+      link(href='dlcf/css/medical.css', type='text/css', rel='stylesheet')
+      link(href='dlcf/css/idangerous.swiper.css', type='text/css', rel='stylesheet')
+      link(href='dlcf/css/swipebox.css', type='text/css', rel='stylesheet')
+      link(href='dlcf/css/global.css', type='text/css', rel='stylesheet')
+      link(href='dlcf/css/global1.css', type='text/css', rel='stylesheet')
+      //link(rel='stylesheet', type='text/css', href='../bower_components/bootstrap/dist/css/bootstrap.min.css', media='screen')
    body
       .welcome
          img(src='../menu/dlcf/image/shouye.png', height='100%', width='100%')
       #mainMenu.menu
-         ul
-            .auzo
-               img#qcBtn(src='../menu/dlcf/image/a.png')
-               img#hxBtn(src='../menu/dlcf/image/b.png')
-               img#hcBtn(src='../menu/dlcf/image/c.png', style='width: 49%;float: left;')
-               img#rouBtn(src='../menu/dlcf/image/d.png', style='width: 49%;float: right;')
-               img#tdBtn(src='../menu/dlcf/image/e.png', style='width: 31%;float: left;padding-right: 3%;')
-               img#zsBtn(src='../menu/dlcf/image/f.png', style='width: 31%;float: left;padding-right: 3%;')
-               img#drinkBtn(src='../menu/dlcf/image/g.png', style='width: 31%;float: left;')
-            .auzo1
-               img(src='../menu/dlcf/image/z.png', style='width: 72%;float: left;padding-left: 2%;')
-            .auzo2
-               img#tjBtn(src='../menu/dlcf/image/h.png', style='width: 95%;')
-               img#dxBtn(src='../menu/dlcf/image/i.png', style='width: 85%;')
-               img#serviceBtn(src='../menu/dlcf/image/j.png', style='width: 85%;')
+         .auzo
+            img#qcBtn(src='../menu/dlcf/image/a.png')
+            img#hxBtn(src='../menu/dlcf/image/b.png')
+            img#hcBtn(src='../menu/dlcf/image/c.png', style='width: 49%;float: left;')
+            img#rouBtn(src='../menu/dlcf/image/d.png', style='width: 49%;float: right;')
+            img#tdBtn(src='../menu/dlcf/image/e.png', style='width: 31%;float: left;padding-right: 3%;')
+            img#zsBtn(src='../menu/dlcf/image/f.png', style='width: 31%;float: left;padding-right: 3%;')
+            img#drinkBtn(src='../menu/dlcf/image/g.png', style='width: 31%;float: left;')
+         .auzo1
+            img(src='../menu/dlcf/image/z.png', style='width: 72%;float: left;padding-left: 2%;')
+         .auzo2
+            img#tjBtn(src='../menu/dlcf/image/h.png', style='width: 95%;')
+            img#dxBtn(src='../menu/dlcf/image/i.png', style='width: 85%;')
+            img#serviceBtn(src='../menu/dlcf/image/j.png', style='width: 85%;')
       #notificationPanel.menu
-         ul
-            .lm1
-               img(src='../menu/dlcf/image/t1.png', style='width: 98%;float: left;')
-            .lm2
-               img(src='../menu/dlcf/image/t2.png', style='width: 98%;float: left;')
-            div
-               // 效果开始
-               .bd_con4
-                  .bd_c4r
-                     .bd_c4top
-                        img.bd_lbtn(src='../menu/dlcf/image/zuo.png')
-                        .bd_chgBox
-                           .bd_long
-                              ul
-                                 li
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                 li
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                 li
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                                    a 当店からのお知らせ1
-                        img.bd_rbtn(src='../menu/dlcf/image/you.png')
+         .lm1
+            img(src='../menu/dlcf/image/t1.png', style='width: 98%;float: left;')
+         .lm2
+            img(src='../menu/dlcf/image/t2.png', style='width: 98%;float: left;')
+         div
+            // 效果开始
+            .bd_con4
+               .bd_c4r
+                  .bd_c4top
+                     img.bd_lbtn(src='../menu/dlcf/image/zuo.png')
+                     .bd_chgBox
+                        .bd_long
+                           ul
+                              li
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ2
+                                 a(href='', target='blank') 当店からのお知らせ3
+                                 a(href='', target='blank') 当店からのお知らせ4
+                              li
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                              li
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                                 a(href='', target='blank') 当店からのお知らせ1
+                     img.bd_rbtn(src='../menu/dlcf/image/you.png')
       #MenuPanel.menu
          ul
             .lm3
                a
-                  img(src='../menu/dlcf/image/e1.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.qcImg(src='../menu/dlcf/image/e1.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e2.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.hxImg(src='../menu/dlcf/image/e2.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e3.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.ycImg(src='../menu/dlcf/image/e3.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e4.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.orImg(src='../menu/dlcf/image/e4.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e5.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.dxImg(src='../menu/dlcf/image/e5.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e6.png', style='width: 98%;float: left;')
+                  img.submenuBtnImg.zsImg(src='../menu/dlcf/image/e6.png', style='width: 98%;float: left;')
             .lm3
                a
-                  img(src='../menu/dlcf/image/e7.png', style='width: 98%;float: left;')
+                  img#drinkMenuBtn.submenuBtnImg.ylImg(src='../menu/dlcf/image/e7.png', style='width: 98%;float: left;')
+            div
+               // 效果开始
+               .bd_c4top
+                  img.bd_lbtn(src='../menu/dlcf/image/zuo.png')
+                  - each kindfoods in menuData.foods
+                     .bd_cpBox.menupage(style='display: none;' id=kindfoods.path)
+                        .bd_cplong
+                           - var subs = 0
+                           - each fooditem in kindfoods.fooditems
+                              - subs = subs + 1
+                           - subs = subs / 6
+                           - var n = 0
+                           - var index = 0
+                           while n <= subs
+                              div.subMenu(style='display: none;' subId=n)
+                                 - var m = 0
+                                 - each fooditem in kindfoods.fooditems
+                                    if (m >= n*6 && m < (n+1)*6)
+                                       .tuanbox(index=index)
+                                          .pic
+                                             img(src='../dlcf/'+kindfoods.path+'/'+fooditem.image)
+                                          .tuanlist
+                                             dd
+                                                a=fooditem.jpname
+                                             .price
+                                                =fooditem.description
+                                             .lg
+                                                img(src='../menu/dlcf/image/xing.png')
+                                             .wybuy ￥
+                                                = fooditem.price
+                                             .countlabel
+                                                img(src='../menu/dlcf/image/sl.png')
+                                                a.countlabelbtn.div(foodname= fooditem.jpname, fooddescrip= fooditem.description,foodprice= fooditem.price)
+                                                dt 0
+                                                a.countlabelbtn.plus(foodname= fooditem.jpname, fooddescrip= fooditem.description,foodprice= fooditem.price)
+                                       - index = index + 1
+                                    - m = m + 1
+                              - n = n + 1
+                  img.bd_rbtn(src='../menu/dlcf/image/you.png')
+      #DrinkMenuPanel.menu
+         ul
+            .lm1
+               img(src='../menu/dlcf/image/t3.png', style='width: 98%;float: left;')
+            .lm2
+               img#backToMenu(src='../menu/dlcf/image/t4.png', style='width: 98%;float: left;')
             div
                // 效果开始
                .bd_c4top
@@ -95,12 +143,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
                                     a.countlabelbtn.div
-                                    dt 5
+                                    dt 0
                                     a.countlabelbtn.plus
-                                 .wybuy 800
                            .tuanbox
                               .pic
                                  a
@@ -111,12 +159,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
                                     a.countlabelbtn.div
-                                    dt 5
+                                    dt 0
                                     a.countlabelbtn.plus
-                                 .wybuy 800
                            .tuanbox
                               .pic
                                  a
@@ -127,10 +175,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
-                                    dt 5
-                                 .wybuy 800
+                                    a.countlabelbtn.div
+                                    dt 0
+                                    a.countlabelbtn.plus
                            .tuanbox
                               .pic
                                  a
@@ -141,12 +191,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
                                     a.countlabelbtn.div
-                                    dt 5
+                                    dt 0
                                     a.countlabelbtn.plus
-                                 .wybuy 800
                            .tuanbox
                               .pic
                                  a
@@ -157,12 +207,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
                                     a.countlabelbtn.div
-                                    dt 5
+                                    dt 0
                                     a.countlabelbtn.plus
-                                 .wybuy 800
                            .tuanbox
                               .pic
                                  a
@@ -173,12 +223,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                  .price からのお知らせ
                                  .lg
                                     img(src='../menu/dlcf/image/xing.png')
+                                 .wybuy 800
                                  .countlabel
                                     img(src='../menu/dlcf/image/sl.png')
                                     a.countlabelbtn.div
-                                    dt 5
+                                    dt 0
                                     a.countlabelbtn.plus
-                                 .wybuy 800
                   img.bd_rbtn(src='../menu/dlcf/image/you.png')
       #orderPanel.menu
          .Layer1(style='/* position:absolute; */ width:100%; height:100%; z-index:-1')
@@ -197,14 +247,15 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                               tr
                                  td(width='69%')
                                     table(width='96%', border='1', align='center', cellpadding='0', cellspacing='0')
-                                       tbody#orderList
+                                       thead
                                           tr
                                              td.bkdi ご選択中の商品名
                                              td.bkdi 数
                                              td.bkdi 合計
-                                             td.bkdi(style='width: 9%;')  減
                                              td.bkdi(style='width: 9%;') 増
-                                          tr
+                                             td.bkdi(style='width: 9%;') 減
+                                       tbody#orderList
+                                          //tr
                                              td.bkdi1(align='left') トマトと玉子炒め
                                              td.bkdi1 99
                                              td.bkdi1 99999円
@@ -214,36 +265,6 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                              td.bkdi1
                                                 a
                                                    img(src='../menu/dlcf/image/jian.png', height='75%')
-                                          tr
-                                             td.bkdi1(align='left')  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                          tr
-                                             td.bkdi1(align='left')  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                          tr
-                                             td.bkdi1(align='left')  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                          tr
-                                             td.bkdi1(align='left')  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                          tr
-                                             td.bkdi1(align='left')  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
-                                             td.bkdi1  
                                     table(width='93%', border='0', align='center', cellpadding='0', cellspacing='0')
                                        tbody
                                           tr
@@ -264,7 +285,7 @@ html(xmlns='http://www.w3.org/1999/xhtml')
                                              td.bkdi4(align='center') ご選択お代わり商品の合計金額
                                           tr
                                              td
-                                                input.add2(type='text', name='user', value='税抜き99999円')
+                                                input.add2(type='text',id='orderLumpSum')
                                           tr
                                              td
                                                 a
@@ -280,6 +301,12 @@ html(xmlns='http://www.w3.org/1999/xhtml')
             div(style='  margin-top: -101px;text-align: center;')
                img#confirmAlertNo.leftbtn(src='../menu/dlcf/image/no.png')
                img#confirmAlertYes.rightbtn(src='../menu/dlcf/image/yes.png')
+      #cancelAlert.alertWindow
+         div(style='width: 507px;margin: 0 auto;margin-top: 17%;')
+            img(src='../menu/dlcf/image/hs.png', height='50%', style='width: 507px;z-index:-10;  height: 50%;')
+            div(style='  margin-top: -101px;text-align: center;')
+               img#cancelAlertNo.leftbtn(src='../menu/dlcf/image/no.png')
+               img#cancelAlertYes.rightbtn(src='../menu/dlcf/image/yes.png')
       #toolBar
          ul.toollist
             #topMenu.dibu
@@ -287,10 +314,21 @@ html(xmlns='http://www.w3.org/1999/xhtml')
             #countNow.dibu1
                img(src='../menu/dlcf/image/l.png', style='width: 100%;')
             #notificationBar.dibu2
-               input.form_keywords(name='Keywords', value='', type='text', placeholder='当店からのお知らせ')
+               input.form_keywords(name='Keywords', type='text', readonly='readonly', placeholder='当店からのお知らせ')
             #call.dibu3
                img(src='../menu/dlcf/image/m.png', style='width: 100%;')
             #clientLabel.dibu4
-               | A3
-               br
-               | 25
+      #initInfoBox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      script(type='text/javascript', src='../menu/dlcf/js/jquery-1.10.1.min.js')
+      script(type='text/javascript', src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
+      script(type='text/javascript', src='../socketio/socket.io.min.js')
+      script(type='text/javascript', src='../socketio/string.min.js')
+      script(type='text/javascript', src='../socketio/moment-with-langs.js')
+      script(type='text/javascript', src='../socketio/comm.js')
+      script(type='text/javascript', src='../socketio/status.js')
+      script(type='text/javascript', src='../socketio/servoAdapter.js')
+      script(type='text/javascript', src='../socketio/init.js')
+      script(type='text/javascript', src='../javascripts/post.js')
+      script(type='text/javascript', src='../menu/dlcf/js/code.js')
+      script(type='text/javascript', src='../javascripts/menuStateChecker2.js')
+      script(src='../plugins/notify.min.js')
