@@ -49,6 +49,8 @@ var openInitBox = function () {
     });
 };
 
+var lastState="";
+
 setInterval(function () {
     var vdata = {
         reqType: "reqState",
@@ -64,6 +66,11 @@ setInterval(function () {
             }
         } else if (data.state == "Unregistered" && initInfoBoxType == "") {
             openInitBox();
+        } else if(data.state == "Off"){
+            lastState = "Off";
+            showPanel([]);
+        }else if(data.state == "On" && lastState == "Off"){
+            showPanel(["mainMenu","toolBar"]);
         }
         else {
             if ($("#initInfoBox").is(":visible")) {

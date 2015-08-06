@@ -106,10 +106,7 @@ var updateOrder = function () {
     reqData(tdata);
 }
 
-
-var initPage = function(){
-    initOrderData();
-    var Menu = {};
+var Menu = {};
     Menu.mainMenu = $("#mainMenu");
     Menu.notificationPanel = $("#notificationPanel");
     Menu.menuPanel   = $("#MenuPanel");
@@ -129,6 +126,10 @@ var initPage = function(){
             Menu[panels[n]].show();
 
     }
+
+var initPage = function(){
+    initOrderData();
+    
 
     var gotoTopMenu = function(){
         showPanel(["mainMenu","toolBar"]);
